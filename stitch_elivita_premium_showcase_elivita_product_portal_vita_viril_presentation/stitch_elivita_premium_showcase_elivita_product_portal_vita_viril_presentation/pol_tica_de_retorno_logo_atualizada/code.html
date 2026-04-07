@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#81d27c",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-on-surface": "#313030",
+              "secondary-fixed": "#a3f69c",
+              "surface-dim": "#131313",
+              "outline-variant": "#4d4635",
+              "tertiary-fixed": "#ffe08b",
+              secondary: "#88d982",
+              "on-secondary-fixed-variant": "#005312",
+              "on-tertiary-fixed-variant": "#584400",
+              tertiary: "#f3ca50",
+              "primary-container": "#d4af37",
+              "on-tertiary": "#3d2f00",
+              "on-surface-variant": "#d0c5af",
+              "on-secondary": "#003909",
+              "tertiary-fixed-dim": "#eac249",
+              "on-background": "#e5e2e1",
+              "on-primary-fixed": "#241a00",
+              "surface-tint": "#e9c349",
+              "surface-variant": "#353534",
+              "surface-container-low": "#1c1b1b",
+              "primary-fixed-dim": "#e9c349",
+              error: "#ffb4ab",
+              "inverse-surface": "#e5e2e1",
+              surface: "#131313",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-container": "#564300",
+              "primary-fixed": "#ffe088",
+              outline: "#99907c",
+              "on-surface": "#e5e2e1",
+              "surface-container-high": "#2a2a2a",
+              "tertiary-container": "#d5af37",
+              "surface-bright": "#393939",
+              "surface-container-highest": "#353534",
+              "surface-container": "#201f1f",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "on-primary-fixed-variant": "#574500",
+              "on-primary": "#3c2f00",
+              background: "#131313",
+              primary: "#f2ca50",
+              "secondary-fixed-dim": "#88d982",
+              "on-secondary-fixed": "#002204",
+              "secondary-container": "#005b14",
+              "inverse-primary": "#735c00",
+              "on-primary-container": "#554300",
+              "on-tertiary-fixed": "#241a00",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      body {
+        background-color: #131313;
+        color: #e5e2e1;
+        font-family: "Manrope", sans-serif;
+      }
+      .serif-hero {
+        font-family: "Noto Serif", serif;
+      }
+      .logo-link {
+        width: clamp(188px, 22vw, 270px);
+        height: clamp(50px, 5vw, 64px);
+        display: inline-flex;
+        align-items: center;
+      }
+      .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: left center;
+        image-rendering: auto;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.36)) saturate(1.06) contrast(1.06);
+      }
+      .footer-logo {
+        height: 46px;
+        width: auto;
+        max-width: 250px;
+        object-fit: contain;
+        image-rendering: auto;
+        filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.45)) saturate(1.08) contrast(1.06);
+      }
+      @media (max-width: 768px) {
+        .logo-link {
+          width: 170px;
+          height: 46px;
+        }
+        .footer-logo {
+          height: 42px;
+          max-width: 210px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface selection:bg-primary/30">
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-md shadow-2xl shadow-black/20 flex justify-between items-center px-6 md:px-12 py-4 max-w-none mx-auto">
+      <a class="logo-link" href="../home_logo_atualizada/code.html">
+        <img
+          alt="ELIVITA Logo"
+          class="logo-img"
+          src="../../../assets/img/logo-elivita-trim.png"
+        />
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        <a class="font-serif font-light tracking-wide text-[#D0C5AF] hover:text-[#F2CA50] transition-colors" href="../home_logo_atualizada/code.html">Home</a>
+        <a class="font-serif font-light tracking-wide text-[#D0C5AF] hover:text-[#F2CA50] transition-colors" href="../vita_viril_presell_logo_atualizada/code.html">Presell</a>
+        <a class="font-serif font-light tracking-wide text-[#F2CA50] border-b border-[#F2CA50] pb-1" href="./code.html">Política</a>
+      </div>
+      <a
+        class="bg-primary text-on-primary px-6 py-2 rounded-full font-label text-sm uppercase tracking-wider font-bold hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform"
+        href="https://wa.me/5511942148975"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Fale com Consultor</a
+      >
+    </nav>
+
+    <main class="pt-32 pb-24">
+      <section class="max-w-5xl mx-auto px-6 mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6">
+            <span class="text-primary font-label text-xs uppercase tracking-[0.2em] block">Transparência e Confiança</span>
+            <h1 class="serif-hero text-5xl md:text-6xl text-on-surface leading-tight">Política de Retorno e Troca</h1>
+            <p class="text-on-surface-variant text-lg leading-relaxed font-light">
+              Esta página organiza os termos de compra, troca, devolução e cancelamento da Elivita.
+            </p>
+          </div>
+          <div class="relative h-[360px] rounded-lg overflow-hidden shadow-2xl shadow-black/50">
+            <img
+              class="w-full h-full object-cover"
+              alt="Produto Vita Viril"
+              src="https://lh3.googleusercontent.com/aida/ADBb0uj5uH5pFC-aJ7inigrZxcxIItl9drHwrSlaZnWYUBiita8nRwrpJOsrNyzQ89-stw8oqpibC8X95aJe9iYIsDMEkCCCz8-qXXKWHBtgbvJOtGFAswo5ZXWm7UgEdl1fUzqBrq6G6vs557eZodlDmCnkyGYW3iPNuFuq5MEfQwete-yUPdwSqsTpunfUhPPlAzPztkiWML4wTBNTFQy-wqtGziCqgAZSAt5k0QIhAdbHD2YMwJeNvjqv0i-1TwQE1lOzGDfTRJUExQ"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-40"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-7 bg-surface-container-low p-10 rounded-xl flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500 border-l border-primary/20">
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <span class="material-symbols-outlined text-primary text-3xl">shopping_bag</span>
+              <h2 class="serif-hero text-2xl text-primary">Política de Compra</h2>
+            </div>
+            <div class="space-y-4 text-on-surface-variant font-light">
+              <p>Todos os pedidos estão sujeitos a confirmação de pagamento e disponibilidade de estoque.</p>
+              <ul class="list-none space-y-3">
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+                  <span>Conferencia de integridade do produto antes do despacho.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+                  <span>Rastreamento informado após faturamento.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 bg-surface-container-high p-10 rounded-xl border-t border-primary/20">
+          <div class="flex items-center gap-4 mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+            <h2 class="serif-hero text-2xl text-primary">Prazos</h2>
+          </div>
+          <div class="space-y-8">
+            <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+              <span class="text-on-surface">Arrependimento</span>
+              <span class="font-bold text-primary">7 dias corridos</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+              <span class="text-on-surface">Defeito/Avaria</span>
+              <span class="font-bold text-primary">30 dias corridos</span>
+            </div>
+            <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+              <span class="text-on-surface">Análise da solicitação</span>
+              <span class="font-bold text-primary">até 3 dias úteis</span>
+            </div>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Em compras realizadas pela internet, o cliente tem direito de arrependimento em até
+              <strong class="text-primary">7 dias corridos</strong>, contados a partir do recebimento do produto,
+              conforme o art. 49 do Código de Defesa do Consumidor.
+            </p>
+          </div>
+        </div>
+
+        <div class="md:col-span-8 bg-surface-container-low p-10 rounded-xl border-b border-primary/20">
+          <div class="flex items-center gap-4 mb-8">
+            <span class="material-symbols-outlined text-primary text-3xl">assignment_return</span>
+            <h2 class="serif-hero text-2xl text-primary">Trocas e Devoluções</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="space-y-4">
+              <h3 class="font-bold text-on-surface uppercase tracking-wider text-xs">Condições obrigatórias</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                Produto com embalagem original, sem violação de lacre e com nota fiscal.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <h3 class="font-bold text-on-surface uppercase tracking-wider text-xs">Procedimento</h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                Para avaria/defeito, pode ser solicitada evidência em foto ou vídeo para análise técnica.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-4 bg-[#1C1B1B] p-10 rounded-xl relative overflow-hidden">
+          <div class="relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="material-symbols-outlined text-error text-3xl">cancel</span>
+              <h2 class="serif-hero text-2xl text-on-surface">Cancelamentos</h2>
+            </div>
+            <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+              Cancelamento sem custo antes da expedição. Após envio, segue fluxo de devolução.
+            </p>
+            <div class="p-4 bg-error-container/10 border border-error/20 rounded">
+              <p class="text-xs text-error">Estorno em cartão pode aparecer em até 2 faturas, conforme o banco emissor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-4xl mx-auto px-6 mt-20 text-center">
+        <div class="bg-surface-container-highest p-12 rounded-full border border-outline-variant/10 shadow-2xl">
+          <h2 class="serif-hero text-3xl text-on-surface mb-4">Precisa de suporte imediato?</h2>
+          <p class="text-on-surface-variant mb-8 max-w-lg mx-auto">
+            Atendimento direto para dúvidas sobre compra, retorno e acompanhamento.
+          </p>
+          <p class="text-on-surface mb-2"><strong>WhatsApp:</strong> (11) 94214-8975</p>
+          <p class="text-on-surface mb-8"><strong>Telefone:</strong> 0800 354 2020</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              class="inline-flex items-center justify-center gap-3 bg-secondary text-on-secondary px-10 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all duration-300"
+              href="https://wa.me/5511942148975"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">chat</span>
+              Suporte no WhatsApp
+            </a>
+            <a class="inline-flex items-center justify-center gap-3 border border-outline text-primary px-10 py-5 rounded-full font-bold uppercase tracking-widest text-sm" href="tel:08003542020">Ligar 0800</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#1C1B1B] w-full rounded-t-none grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 border-t border-[#2A2A2A]">
+      <div>
+        <div class="mb-6">
+          <img
+            alt="ELIVITA Logo"
+            class="footer-logo"
+            src="../../../assets/img/logo-elivita-trim.png"
+          />
+        </div>
+        <p class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] leading-relaxed">Política oficial de compra, troca e devolução.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="text-[#F2CA50] font-sans text-sm uppercase tracking-[0.2em] mb-2">Navegação</h4>
+        <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="../home_logo_atualizada/code.html">Home</a>
+        <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="../vita_viril_presell_logo_atualizada/code.html">Presell</a>
+        <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="./code.html">Política</a>
+      </div>
+      <div class="flex flex-col justify-between">
+        <p class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em]">WhatsApp: (11) 94214-8975</p>
+        <p class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em]">0800 354 2020</p>
+        <p class="text-[#D0C5AF] font-sans text-[10px] uppercase tracking-[0.1em] mt-8 opacity-50">© 2026 Elivita Suplementos.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+

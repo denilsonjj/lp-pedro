@@ -1,0 +1,46 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editors / IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# Cache / temp
+.cache/
+tmp/
+temp/
+*.tmp
+
+# Python (if used for helper scripts)
+__pycache__/
+*.py[cod]
+
+# Node (if you add build tooling later)
+node_modules/
+dist/
+build/
+coverage/
+
+# Optional: ignore old Stitch working folder
+# stitch_elivita_premium_showcase_elivita_product_portal_vita_viril_presentation/
