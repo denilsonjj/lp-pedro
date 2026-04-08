@@ -115,6 +115,31 @@
         image-rendering: auto;
         filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.45)) saturate(1.08) contrast(1.06);
       }
+      .whatsapp-float {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 60;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px 10px 10px;
+        border-radius: 999px;
+        background: #25d366;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 1;
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+      }
+      .whatsapp-float svg {
+        width: 22px;
+        height: 22px;
+        fill: currentColor;
+      }
+      .whatsapp-float:hover {
+        transform: translateY(-2px);
+      }
       @media (max-width: 768px) {
         .logo-link {
           width: 170px;
@@ -124,29 +149,35 @@
           height: 42px;
           max-width: 210px;
         }
+        .whatsapp-float {
+          padding: 10px;
+        }
+        .whatsapp-float span {
+          display: none;
+        }
       }
     </style>
   </head>
   <body class="bg-surface text-on-surface selection:bg-primary/30">
-    <nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-md shadow-2xl shadow-black/20 flex justify-between items-center px-6 md:px-12 py-4 max-w-none mx-auto">
+    <nav class="fixed top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-md shadow-2xl shadow-black/20 flex justify-between items-center px-6 md:px-12 py-4 max-w-none mx-auto">
       <a class="logo-link" href="index.html">
         <img
-          alt="ELIVITA Logo"
+          alt="EliVita Logo"
           class="logo-img"
           src="assets/img/logo-elivita-trim.png"
         />
       </a>
       <div class="hidden md:flex items-center gap-10">
         <a class="font-serif font-light tracking-wide text-[#D0C5AF] hover:text-[#F2CA50] transition-colors" href="index.html">Home</a>
-        <a class="font-serif font-light tracking-wide text-[#D0C5AF] hover:text-[#F2CA50] transition-colors" href="presell.html">Presell</a>
+        <a class="font-serif font-light tracking-wide text-[#D0C5AF] hover:text-[#F2CA50] transition-colors" href="presell.html">Vita Viril</a>
         <a class="font-serif font-light tracking-wide text-[#F2CA50] border-b border-[#F2CA50] pb-1" href="politica.html">Política</a>
       </div>
       <a
-        class="bg-primary text-on-primary px-6 py-2 rounded-full font-label text-sm uppercase tracking-wider font-bold hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform"
+        class="bg-[#F2CA50] text-[#3c2f00] px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider scale-95 active:scale-90 transition-transform hover:opacity-80"
         href="https://wa.me/5511942148975"
         target="_blank"
         rel="noopener noreferrer"
-        >Fale com Consultor</a
+        >Fale no WhatsApp</a
       >
     </nav>
 
@@ -157,7 +188,7 @@
             <span class="text-primary font-label text-xs uppercase tracking-[0.2em] block">Transparência e Confiança</span>
             <h1 class="serif-hero text-5xl md:text-6xl text-on-surface leading-tight">Política de Retorno e Troca</h1>
             <p class="text-on-surface-variant text-lg leading-relaxed font-light">
-              Esta página organiza os termos de compra, troca, devolução e cancelamento da Elivita.
+              Esta página organiza os termos de compra, troca, devolução e cancelamento da EliVita.
             </p>
           </div>
           <div class="relative h-[360px] rounded-lg overflow-hidden shadow-2xl shadow-black/50">
@@ -183,7 +214,7 @@
               <ul class="list-none space-y-3">
                 <li class="flex items-start gap-2">
                   <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
-                  <span>Conferencia de integridade do produto antes do despacho.</span>
+                  <span>Conferência de integridade do produto antes do despacho.</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
@@ -202,7 +233,7 @@
           <div class="space-y-8">
             <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
               <span class="text-on-surface">Arrependimento</span>
-              <span class="font-bold text-primary">7 dias ?teis</span>
+              <span class="font-bold text-primary">7 dias úteis</span>
             </div>
             <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
               <span class="text-on-surface">Defeito/Avaria</span>
@@ -214,7 +245,7 @@
             </div>
             <p class="text-xs text-on-surface-variant leading-relaxed">
               Em compras realizadas pela internet, o cliente tem direito de arrependimento em até
-              <strong class="text-primary">7 dias ?teis</strong>, contados a partir do recebimento do produto,
+              <strong class="text-primary">7 dias úteis</strong>, contados a partir do recebimento do produto,
               conforme o art. 49 do Código de Defesa do Consumidor.
             </p>
           </div>
@@ -264,7 +295,6 @@
             Atendimento direto para dúvidas sobre compra, retorno e acompanhamento.
           </p>
           <p class="text-on-surface mb-2"><strong>WhatsApp:</strong> (11) 94214-8975</p>
-          <p class="text-on-surface mb-8"><strong>Telefone:</strong> 0800 354 2020</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a
               class="inline-flex items-center justify-center gap-3 bg-secondary text-on-secondary px-10 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all duration-300"
@@ -272,10 +302,9 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">chat</span>
-              Suporte no WhatsApp
+              <svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 32 32"><path d="M19.11 17.2c-.27-.13-1.59-.78-1.84-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.04-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.14-1.31-.79-.7-1.33-1.56-1.49-1.82-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.26s.98 2.62 1.12 2.8c.13.18 1.9 2.9 4.6 4.07.64.28 1.14.45 1.53.57.64.2 1.22.17 1.68.1.51-.08 1.59-.65 1.81-1.28.22-.63.22-1.17.16-1.28-.06-.11-.24-.18-.51-.31zM16.01 3.2C9 3.2 3.3 8.9 3.3 15.91c0 2.22.58 4.4 1.67 6.32L3.2 28.8l6.76-1.74c1.86 1.01 3.96 1.54 6.05 1.54h.01c7.01 0 12.7-5.7 12.7-12.71 0-3.39-1.32-6.58-3.72-8.98-2.4-2.4-5.59-3.72-8.99-3.71zm0 23.25h-.01c-1.87 0-3.7-.5-5.3-1.45l-.38-.23-4.01 1.03 1.07-3.91-.25-.4a10.5 10.5 0 0 1-1.6-5.57c0-5.79 4.71-10.5 10.51-10.5 2.8 0 5.43 1.09 7.42 3.08a10.43 10.43 0 0 1 3.08 7.42c0 5.79-4.72 10.5-10.53 10.5z"/></svg>
+              Chamar no WhatsApp
             </a>
-            <a class="inline-flex items-center justify-center gap-3 border border-outline text-primary px-10 py-5 rounded-full font-bold uppercase tracking-widest text-sm" href="tel:08003542020">Ligar 0800</a>
           </div>
         </div>
       </section>
@@ -285,7 +314,7 @@
       <div>
         <div class="mb-6">
           <img
-            alt="ELIVITA Logo"
+            alt="EliVita Logo"
             class="footer-logo"
             src="assets/img/logo-elivita-trim.png"
           />
@@ -295,15 +324,26 @@
       <div class="flex flex-col gap-4">
         <h4 class="text-[#F2CA50] font-sans text-sm uppercase tracking-[0.2em] mb-2">Navegação</h4>
         <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="index.html">Home</a>
-        <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="presell.html">Presell</a>
+        <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="presell.html">Vita Viril</a>
         <a class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] hover:text-[#F2CA50] transition-colors duration-200" href="politica.html">Política</a>
       </div>
       <div class="flex flex-col justify-between">
         <p class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em]">WhatsApp: (11) 94214-8975</p>
         <p class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em]">0800 354 2020</p>
-        <p class="text-[#D0C5AF] font-sans text-[10px] uppercase tracking-[0.1em] mt-8 opacity-50">© 2026 Elivita Suplementos.</p>
+        <p class="text-[#D0C5AF] font-sans text-sm uppercase tracking-[0.1em] mt-8 opacity-60">© 2026 EliVita Suplementos.</p>
       </div>
     </footer>
+
+    <a
+      class="whatsapp-float transition-transform"
+      href="https://wa.me/5511942148975"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chamar no WhatsApp"
+    >
+      <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M19.11 17.2c-.27-.13-1.59-.78-1.84-.87-.25-.09-.43-.13-.61.13-.18.27-.7.87-.86 1.04-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.14-1.31-.79-.7-1.33-1.56-1.49-1.82-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.26s.98 2.62 1.12 2.8c.13.18 1.9 2.9 4.6 4.07.64.28 1.14.45 1.53.57.64.2 1.22.17 1.68.1.51-.08 1.59-.65 1.81-1.28.22-.63.22-1.17.16-1.28-.06-.11-.24-.18-.51-.31zM16.01 3.2C9 3.2 3.3 8.9 3.3 15.91c0 2.22.58 4.4 1.67 6.32L3.2 28.8l6.76-1.74c1.86 1.01 3.96 1.54 6.05 1.54h.01c7.01 0 12.7-5.7 12.7-12.71 0-3.39-1.32-6.58-3.72-8.98-2.4-2.4-5.59-3.72-8.99-3.71zm0 23.25h-.01c-1.87 0-3.7-.5-5.3-1.45l-.38-.23-4.01 1.03 1.07-3.91-.25-.4a10.5 10.5 0 0 1-1.6-5.57c0-5.79 4.71-10.5 10.51-10.5 2.8 0 5.43 1.09 7.42 3.08a10.43 10.43 0 0 1 3.08 7.42c0 5.79-4.72 10.5-10.53 10.5z"/></svg>
+      <span>WhatsApp</span>
+    </a>
   </body>
 </html>
 
