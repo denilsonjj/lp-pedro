@@ -187,15 +187,25 @@
         transform: translateY(-2px);
       }
       .hero-bottle-biocart-wrap {
-        width: clamp(160px, 17vw, 250px);
+        width: 168px;
       }
       .hero-bottle-biocart {
         width: 100%;
         height: auto;
         object-fit: contain;
-        transform: scale(1.16);
+        transform: none;
         transform-origin: center bottom;
         filter: drop-shadow(0 36px 34px rgba(0, 0, 0, 0.55));
+      }
+      @media (min-width: 768px) {
+        .hero-bottle-biocart-wrap {
+          width: 244px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hero-bottle-biocart-wrap {
+          width: 297px;
+        }
       }
       @media (max-width: 768px) {
         .logo-link {
@@ -219,12 +229,6 @@
         }
         .whatsapp-float span {
           display: none;
-        }
-        .hero-bottle-biocart-wrap {
-          width: 154px;
-        }
-        .hero-bottle-biocart {
-          transform: scale(1.2);
         }
       }
     </style>
@@ -299,7 +303,7 @@
               <div class="relative z-20 -mr-14 md:-mr-20 lg:-mr-24 -rotate-6 translate-y-2 md:translate-y-4 hover:rotate-0 transition-transform duration-500 hover:z-30 group">
                 <img
                   alt="Vita Viril"
-                  class="w-52 md:w-72 lg:w-[22rem] h-auto object-contain drop-shadow-[0_40px_38px_rgba(0,0,0,0.62)]"
+                  class="w-44 md:w-64 lg:w-[19.5rem] h-auto object-contain drop-shadow-[0_40px_38px_rgba(0,0,0,0.62)]"
                   src="assets/img/vita-viril-sem-fundo.png"
                 />
               </div>
